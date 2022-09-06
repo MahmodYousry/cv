@@ -140,7 +140,7 @@
 		font-size:15px
 	}
 	
-	.rightside {width: 69%;}
+	.rightside {		width: 62%;		margin: 20px 4%;	}
 	.skills, .work {width:70%}
 	.skills .pro-skills h4 {left: 26%;}
 	.skills, .work {width:70%;}
