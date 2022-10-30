@@ -4,7 +4,7 @@
 
 <p>if there is any chance of hiring please contact me on anyway</p>
 
-<a style="font-size: 40px;" href="http://hodapro.epizy.com/cv/">Preview</a>
+<a style="font-size: 40px;" href="http://hodapro.epizy.com/cv/">Click To Preview</a>
 
 
 
