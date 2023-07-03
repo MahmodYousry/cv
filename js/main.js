@@ -18,3 +18,18 @@ $(function () {
   });
 
 });
+
+
+let images = ['imgs/me.webp', 'imgs/me2.webp'];
+
+let index = 0;
+const imgElement = document.querySelector('#personal_image');
+
+function changeImage() {
+   imgElement.src = images[index];
+   index >= 1 ? index = 0 : index++;
+}
+
+window.onload = function () {
+    setInterval(changeImage, 5000);
+};
