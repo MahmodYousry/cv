@@ -123,9 +123,11 @@ a:hover {color:#eee;text-decoration:none;}
 }
 
 .introduction .intitle {
-	color:#777;
+  color: #666;
+  font-weight: bold;
   display: block;
   margin-bottom: 1rem;
+  letter-spacing: .5px;
 }
 
 .rightside p {
@@ -239,8 +241,7 @@ a:hover {color:#eee;text-decoration:none;}
   border-radius: 4px;
 }
 
-
-.skills .pro-skills h4 {
+.skills .pro-skills span {
   text-align: center;
   background-color: #0184CE;
   color: #FFF;
@@ -368,14 +369,14 @@ a:hover {color:#eee;text-decoration:none;}
 	text-transform: capitalize;
 }
 
-.work .work-project h3 {
-	margin: auto;
-    background-color: #1a9be4;
-    color: #FFF;
-    padding: 15px 0px;
-    font-size: 18px;
-    text-align: center;
-    width: 100%;
+.work .work-project h1 {
+  margin: auto;
+  background-color: #1a9be4;
+  color: #FFF;
+  padding: 15px 0px;
+  font-size: 1.1rem;
+  text-align: center;
+  width: 100%;
 }
 
 .work .work-project a {
