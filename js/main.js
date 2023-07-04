@@ -22,7 +22,7 @@ var index = 0;
 
 function changeImage() {
   var imgElement = document.querySelector('#personal_image');
-  let images = ['imgs/me2.webp', 'imgs/me.webp'];
+  let images = ['imgs/me2.jpg', 'imgs/me.jpg'];
   
 	imgElement.parentElement.animate({ opacity: 0 }, 200);
 	imgElement.parentElement.animate({ opacity: 1 }, 3000);
