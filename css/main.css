@@ -5,6 +5,25 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+::-webkit-scrollbar-track
+{
+  border: 5px solid #EFEFEF;
+  background-color: #b2bec3;
+}
+
+::-webkit-scrollbar
+{
+  width: 15px;
+  background-color: #dfe6e9;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color: #888;
+  border-radius: 6px;
+}
+
+
 .head {color:#0A84C8;}
 
 h1 {display: inline-block;}
@@ -392,20 +411,3 @@ a:hover {color:#eee;text-decoration:none;}
 .footer i {color:red;}
 
 /* END footer Code */
-
-/* start animtons */
-
-@keyframes changeOpacity {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-/* end animtons */

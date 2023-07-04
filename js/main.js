@@ -1,10 +1,5 @@
 $(function () {
   'use strict';
-  //Adjust Slider Height
-  var winH   = $(window).height(),
-      upperH = $('.upper-bar').innerHeight(),
-      navH   = $('.navbar').innerHeight();
-  $('.slider ,.carousel-item').height(winH - ( upperH + navH ));
   
   //featured work
   $('.featured-work ul li').on('click', function () {
@@ -17,19 +12,26 @@ $(function () {
 	  }
   });
 
+
 });
 
 
-let images = ['imgs/me.webp', 'imgs/me2.webp'];
 
-let index = 0;
-const imgElement = document.querySelector('#personal_image');
+
+var index = 0;
 
 function changeImage() {
-   imgElement.src = images[index];
-   index >= 1 ? index = 0 : index++;
+  var imgElement = document.querySelector('#personal_image');
+  let images = ['imgs/me2.webp', 'imgs/me.webp'];
+  
+	imgElement.parentElement.animate({ opacity: 0 }, 200);
+	imgElement.parentElement.animate({ opacity: 1 }, 3000);
+
+  imgElement.src = images[index]; // set the new image source
+
+  index >= 1 ? index = 0 : index++; // increment index and reset to 0 if necessary
 }
 
 window.onload = function () {
-    setInterval(changeImage, 5000);
+	setInterval(changeImage, 4000);
 };
