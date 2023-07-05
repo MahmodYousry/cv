@@ -16,22 +16,3 @@ $(function () {
 });
 
 
-
-
-var index = 0;
-
-function changeImage() {
-  var imgElement = document.querySelector('#personal_image');
-  let images = ['imgs/me2.jpg', 'imgs/me.jpg'];
-  
-	imgElement.parentElement.animate({ opacity: 0 }, 200);
-	imgElement.parentElement.animate({ opacity: 1 }, 3000);
-
-  imgElement.src = images[index]; // set the new image source
-
-  index >= 1 ? index = 0 : index++; // increment index and reset to 0 if necessary
-}
-
-window.onload = function () {
-	setInterval(changeImage, 4000);
-};
