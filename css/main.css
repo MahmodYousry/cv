@@ -3,13 +3,6 @@ body {
   background-color:#EFEFEF;
   font-family:Tahoma, Arial;
   font-family: 'Roboto', sans-serif;
-  animation: mymove 3s infinite;
-  animation-direction: alternate;
-}
-
-@keyframes mymove {
-  from {background-color: #EFEFEF;}
-  to {background-color: #e1e1e1;}
 }
 
 ::-webkit-scrollbar-track
