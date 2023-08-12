@@ -50,17 +50,64 @@ a:hover {color:#eee;text-decoration:none;}
 	margin:0;
 }
 
-
-
 .all .img-conto {
   position: relative;
   height: 330px;
 }
 
+@media (max-width: 767px) {
+  .all .img-conto {
+    margin-bottom: 45px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .all .img-conto {
+    margin-bottom: 45px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .all .img-conto {
+    margin-bottom: 0px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .all .img-conto {
+    margin-bottom: 50px !important;
+  }
+}
+
+
+
 .all .img-conto img {
   position: absolute;
   width: 100%;
   opacity: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+  .all .img-conto img {
+    width: 330px;
+    height: 330px;
+  }
+}
+
+@media (min-width: 768px) {
+  .all .img-conto img {
+    width: 330px;
+    height: 330px;
+  }
+}
+
+@media (min-width: 992px) {
+  .all .img-conto img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .all .img-conto img:nth-child(1) {
@@ -115,10 +162,19 @@ a:hover {color:#eee;text-decoration:none;}
 	transition: .4s;
 }
 
+@media (min-width: 500px) {
+  .leftside a {
+    position: absolute;
+    bottom: -65px;
+  }
+}
+
 @media (max-width: 767px) {
   .leftside a {
     display: block;
     width: 100%;
+    position: absolute;
+    bottom: -60px;
   }
 
   .leftside, .rightside {
@@ -136,14 +192,19 @@ a:hover {color:#eee;text-decoration:none;}
 @media (min-width: 992px) {
   .leftside a {
     width: 100%;
-    font-size:12px
+    font-size:12px;
+
+    position: absolute;
+    bottom: 5px;
   }
 }
 
 @media (min-width: 1200px) {
   .leftside a {
     width: 100%;
-    font-size:15px
+    font-size:15px;
+    position: absolute;
+    bottom: -50px;
   }
 }
 
