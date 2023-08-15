@@ -172,9 +172,11 @@ a:hover {color:#eee;text-decoration:none;}
 @media (max-width: 767px) {
   .leftside a {
     display: block;
-    width: 100%;
+    width: 330px;
     position: absolute;
     bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .leftside, .rightside {
@@ -184,8 +186,9 @@ a:hover {color:#eee;text-decoration:none;}
 
 @media (min-width: 768px) {
   .leftside a {
-    display: block;
-    width: 100%;
+    width: 330px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
