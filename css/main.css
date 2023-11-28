@@ -376,8 +376,14 @@ a:hover {color:#eee;text-decoration:none;}
   display: inline-block;
 }
 
-.skills .pro-skills .minititle h3 {text-align:left;}
-.skills .pro-skills .minititle p {float:right;margin-top:2px;}
+.skills .pro-skills .minititle h3 {
+  text-align:left;
+}
+
+.skills .pro-skills .minititle p {
+  float:right;margin-top:2px;
+}
+
 .skills .pro-skills h3 {
   font-size: 14px;
   text-align: right;
@@ -469,11 +475,12 @@ a:hover {color:#eee;text-decoration:none;}
 }
 
 .work .work-project .info {
-	height: 150px;
+  height: 100px;
   margin: 15px 15px;
   padding-bottom: 0;
   font-size: 14px;
   overflow: hidden;
+  overflow-y: auto;
 }
 
 .work .work-project .info p {
