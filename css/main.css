@@ -328,6 +328,10 @@ a:hover {color:#eee;text-decoration:none;}
 .rightside ul li .fa-linkedin {
   color: #0077b5;
 }
+
+.rightside ul li .fa-github {
+  color: #383838;
+}
 .rightside ul li .fa-yahoo {color:#410093}
 
 /* END personal-information Code */
@@ -386,7 +390,7 @@ a:hover {color:#eee;text-decoration:none;}
   text-align: right;
   margin-bottom: 0;
   line-height: 25px;
-  display: inline-block;
+  text-align: center;
 }
 
 .skills .pro-skills span.skills-badge {
