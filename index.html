@@ -57,7 +57,7 @@
 						<div class="col-lg-6">
 							<div class="details">
 								<span>age</span>
-								<h4>26</h4>
+								<h4 id="myAgeElement">26</h4>
 								<span>Address</span>
 								<h4>13 ,Alexandria, Elmaraghy Khorshed</h4>
 								<span>Email</span>
@@ -372,6 +372,26 @@
 					animate: 2000
 				});
 			});
+		</script>
+		<script>
+			// function to calc my age from birthdate
+			function calculateAge(birthDate) {
+				const today = new Date();
+				const birth = new Date(birthDate);
+			
+				let age = today.getFullYear() - birth.getFullYear();
+				const monthDiff = today.getMonth() - birth.getMonth();
+			
+				// Check if the birth month and day hasn't happened yet this year
+				if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+					age--;
+				}
+			
+				return age;
+			}
+
+			const myAge = calculateAge('1997-01-26');
+			document.querySelector('#myAgeElement').innerHTML = myAge;
 		</script>
 		<!-- End Scripts -->
 	</body>
