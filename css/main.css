@@ -20,7 +20,7 @@ body {
 }
 
 .head {
-  color: #0A84C8;
+  color: #005BB5;
 }
 
 a:hover {
@@ -358,7 +358,7 @@ a:hover {
 
 .h1 {
   margin: 0 auto;
-  color: #0184CE;
+  color: #005BB5;
   text-transform: capitalize;
   font-weight: bold;
   margin-top: 40px;
@@ -382,7 +382,7 @@ a:hover {
 
 .skills .pro-skills span.title {
   text-align: center;
-  background-color: #0184CE;
+  background-color: #005BB5;
   color: #FFF;
   margin-bottom: 0;
   position: absolute;
@@ -404,7 +404,7 @@ a:hover {
 }
 
 .skills .pro-skills span.skills-badge {
-  background: #0184ce;
+  background: #005BB5;
   color: white;
   padding: 5px 15px;
   border-radius: 3px;
