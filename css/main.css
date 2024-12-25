@@ -488,6 +488,14 @@ a:hover {
 /* END Skills Code */
 
 /* Start Education Code */
+.education a {
+  color: #005BB5;
+  font-weight: bold;
+  text-decoration: underline;
+}
+/* END Education Code */
+
+/* Start work project */
 
 .work .work-project {
   background: #FFF;
@@ -517,7 +525,7 @@ a:hover {
 
 .work .work-project h1 {
   margin: auto;
-  background-color: #1a9be4;
+  background-color: #005BB5;
   color: #FFF;
   padding: 15px 0px;
   font-size: 1.1rem;
@@ -526,7 +534,7 @@ a:hover {
 }
 
 .work .work-project a {
-  color: #1a9be4;
+  color: #005BB5;
   width: 100%;
   display: block;
   text-transform: capitalize;
@@ -537,15 +545,14 @@ a:hover {
 
 .work .work-project a:hover {
   color: #fff;
-  background: #1a9be4;
+  background: #005BB5;
 }
-
-/* END Education Code */
+/* Start work project */
 
 /* Start footer Code */
 
 .footer {
-  background-color: #1a9be4;
+  background-color: #005BB5;
   color: #fff;
   padding: 8px 20px;
 }
