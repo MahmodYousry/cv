@@ -23,11 +23,6 @@ body {
   color: #0A84C8;
 }
 
-a {
-  text-decoration: none;
-  color: #eee;
-}
-
 a:hover {
   color: #eee;
   text-decoration: none;
