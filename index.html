@@ -7,16 +7,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<!-- Title Tag -->
 		<title>Mahmoud Yousry CV</title>
-		<!-- Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" defer>
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin defer>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" defer>
-		<!-- Libraries Link Tag -->
+
+		<!-- Preconnect to Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<!-- Load Fonts Efficiently -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+
+		<!-- Libraries -->
 		<link rel="icon" href="imgs/icon/favicon.webp">
-		<link rel="stylesheet" href="css/bootstrap.min.css" async />
-		<link rel="stylesheet" href="css/font-awesome.min.css" defer />
-		<!-- Custom Styles -->
-		<link rel="stylesheet" href="css/main.css" sync />
+
+		<!-- Non-Critical Styles -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" media="print" onload="this.media='all'" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" media="print" onload="this.media='all'" />
+
+		<!-- Critical Styles -->
+		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
 		<!-- Start All person information -->
@@ -163,6 +170,10 @@
 								<span class="skills-badge">
 									<span>Angular</span>
 								</span>
+
+								<span class="skills-badge">
+									<span>Git & Github</span>
+								</span>
 	
 								<span class="skills-badge">
 									<span>PHP</span>
@@ -229,6 +240,12 @@
 								</li>
 								<li class="mb-2">
 									<p class="mb-0">
+										<strong>Laravel 11 Updates - The Complete Guide</strong> - Udemy Course 
+										<a href="./files/Laravel 11 Updates - The Complete Guide.pdf" target="_blank">Certification</a>
+									</p>
+								</li>
+								<li class="mb-2">
+									<p class="mb-0">
 										<strong>Laravel Jetstream and Fortify</strong> Course on Udemy 
 										<a href="./files/laravel jetstream and fortify.pdf" target="_blank">Certification</a>
 									</p>
@@ -237,6 +254,18 @@
 									<p class="mb-0">
 										<strong>Laravel RESTFUL APIs</strong> - Udemy Course 
 										<a href="./files/laravel restful apis.pdf" target="_blank">Certification</a>
+									</p>
+								</li>
+								<li class="mb-2">
+									<p class="mb-0">
+										<strong>Laravel Socialite - The Complete Guide</strong> - Udemy Course 
+										<a href="./files/Laravel Socialite - The Complete Guide.pdf" target="_blank">Certification</a>
+									</p>
+								</li>
+								<li class="mb-2">
+									<p class="mb-0">
+										<strong>Laravel Telescope for Absolute Beginners</strong> - Udemy Course 
+										<a href="./files/Laravel Telescope for Absolute Beginners.pdf" target="_blank">Certification</a>
 									</p>
 								</li>
 							</ul>							
@@ -390,10 +419,10 @@
 
 		<!-- Scripts -->
 		<script src="js/jquery-3.2.1.min.js" sync></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.easypiechart.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/popper.min.js" defer></script>
+		<script src="js/bootstrap.min.js" defer></script>
+		<script src="js/jquery.easypiechart.js" defer></script>
+		<script src="js/main.js" defer></script>
 		<script>
 			$(function() {
 				$('.chart').easyPieChart({
