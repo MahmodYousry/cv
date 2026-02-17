@@ -1,0 +1,71 @@
+<div class="hero-card">
+  <div class="row g-4 align-items-center">
+    <div class="col-lg-4 text-center text-lg-start">
+      <div class="hero-photo-wrap d-flex justify-content-center">
+        @for (img of profile.imageUrls; track img; let i = $index) {
+          <img
+            class="hero-photo"
+            [src]="img"
+            width="280"
+            height="280"
+            [alt]="i === 0 ? 'Mahmoud Yousry' : 'Mahmoud Yousry'"
+            loading="eager"
+          />
+        }
+      </div>
+      <div class="d-flex justify-content-center">
+        <a class="hero-download" [href]="profile.resumePdfUrl" download>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+            aria-hidden="true"
+          >
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+            />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+            />
+          </svg>
+          <span>Download Resume</span>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">{{ profile.name }}</h1>
+      <p class="hero-title">{{ profile.title }}</p>
+      <div class="hero-bio">
+        @for (p of profile.introParagraphs; track p) {
+          <p class="hero-text">{{ p }}</p>
+        }
+        <div class="hero-highlights">
+          @if (profile.frontEndIntro) {
+            <div class="highlight">
+              <span class="highlight-label">Front-End</span>
+              <span class="highlight-text">{{ profile.frontEndIntro }}</span>
+            </div>
+          }
+          @if (profile.backEndIntro) {
+            <div class="highlight">
+              <span class="highlight-label">Back-End</span>
+              <span class="highlight-text">{{ profile.backEndIntro }}</span>
+            </div>
+          }
+          @if (profile.apiIntro) {
+            <div class="highlight">
+              <span class="highlight-label">API &amp; JSON</span>
+              <span class="highlight-text">{{ profile.apiIntro }}</span>
+            </div>
+          }
+        </div>
+        @if (profile.closingIntro) {
+          <p class="hero-text hero-closing">{{ profile.closingIntro }}</p>
+        }
+      </div>
+    </div>
+  </div>
+</div>
