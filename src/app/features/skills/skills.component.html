@@ -1,0 +1,29 @@
+<app-section-title title="Skills" />
+<div class="container">
+  <div class="skills-section my-5">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="skills-card">
+          <span class="skills-card-title">My Skills</span>
+          <div class="badges-grid">
+            @for (skill of skills; track skill.name) {
+              <app-skill-badge [name]="skill.name" />
+            }
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="skills-card">
+          <div class="soft-skills-row">
+            @for (soft of softSkills; track soft.label) {
+              <app-progress-ring [label]="soft.label" [percent]="soft.percent" />
+            }
+          </div>
+          <div class="education-wrap">
+            <app-education />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
