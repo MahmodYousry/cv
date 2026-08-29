@@ -5,6 +5,21 @@ import { Project } from '../models/project.model';
 export class ProjectsService {
   private readonly projects: Project[] = [
     {
+      title: 'Arabic U 2024',
+      imageUrl: 'imgs/projects-thumbs/arabicu-intro.webp',
+      imageAlt: 'Arabic U',
+      features: [
+        'Laravel',
+        'Bootstrap 5',
+        'Bilingual AR/EN',
+        'Online Quizzes',
+        'Admin Dashboard',
+        'Student Results',
+        'Fully Responsive',
+      ],
+      previewUrl: 'https://arabicu.net',
+    },
+    {
       title: 'DANIELS Template 2023',
       imageUrl: 'imgs/projects-thumbs/daniels template.webp',
       imageAlt: 'DANIELS Template',
