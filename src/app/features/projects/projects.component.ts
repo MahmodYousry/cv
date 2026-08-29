@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { ProjectsService } from '../../core/services/projects.service';
 import { SectionTitleComponent } from '../../shared/components/section-title/section-title.component';
 import { Project } from '../../core/models/project.model';
@@ -6,7 +7,7 @@ import { Project } from '../../core/models/project.model';
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [SectionTitleComponent],
+  imports: [SectionTitleComponent, RouterLink],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })

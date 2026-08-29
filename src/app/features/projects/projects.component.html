@@ -25,7 +25,12 @@
                 <p>{{ project.description }}</p>
               }
             </div>
-            <a [href]="project.previewUrl" target="_blank" rel="noopener noreferrer">preview</a>
+            <div class="project-actions">
+              <a [href]="project.previewUrl" target="_blank" rel="noopener noreferrer">preview</a>
+              @if (project.slug) {
+                <a [routerLink]="['/projects', project.slug]">details</a>
+              }
+            </div>
           </div>
         </div>
       }

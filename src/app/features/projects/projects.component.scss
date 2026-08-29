@@ -28,7 +28,8 @@
     min-height: 100px;
   }
 
-  > a {
+  .project-actions {
     flex-shrink: 0;
+    display: flex;
   }
 }

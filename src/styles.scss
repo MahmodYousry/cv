@@ -477,17 +477,23 @@ a:hover {
   width: 100%;
 }
 
-.work .work-project > a {
-  color: #005BB5;
+.work .work-project .project-actions {
+  display: flex;
   width: 100%;
+}
+
+.work .work-project .project-actions a {
+  color: #005BB5;
+  flex: 1;
   display: block;
   text-transform: capitalize;
   text-align: center;
   padding: 10px 0;
   transition: .4s;
+  text-decoration: none;
 }
 
-.work .work-project > a:hover {
+.work .work-project .project-actions a:hover {
   color: #fff;
   background: #005BB5;
 }

@@ -1,0 +1,45 @@
+<div class="project-details container py-5">
+  <a routerLink="/" fragment="projects" class="back-link">&larr; Back to projects</a>
+
+  @if (!project) {
+    <div class="not-found mt-4">
+      <h1>Project not found</h1>
+      <p>This project does not have a details page, or the link is invalid.</p>
+      <a routerLink="/" class="btn-home">Go home</a>
+    </div>
+  } @else {
+    <header class="details-header mt-4">
+      <h1 class="head">{{ project.title }}</h1>
+      <img
+        class="img-fluid details-thumb"
+        [src]="project.imageUrl"
+        [alt]="project.imageAlt"
+        width="720"
+        height="405"
+        loading="eager"
+      />
+      @if (project.features?.length) {
+        <ul class="features-list">
+          @for (f of project.features; track f) {
+            <li>{{ f }}</li>
+          }
+        </ul>
+      }
+      <div class="actions">
+        <a [href]="project.previewUrl" target="_blank" rel="noopener noreferrer" class="action-btn">
+          Live preview
+        </a>
+      </div>
+    </header>
+
+    <section class="readme mt-4">
+      @if (loading) {
+        <p>Loading details&hellip;</p>
+      } @else if (readmeError) {
+        <p class="error">Could not load the project README.</p>
+      } @else if (readmeHtml) {
+        <article class="readme-body" [innerHTML]="readmeHtml" (click)="onReadmeClick($event)"></article>
+      }
+    </section>
+  }
+</div>
