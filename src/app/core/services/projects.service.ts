@@ -5,6 +5,22 @@ import { Project } from '../models/project.model';
 export class ProjectsService {
   private readonly projects: Project[] = [
     {
+      title: 'MrMath Educational Platform',
+      imageUrl: 'imgs/projects-thumbs/mrmath-front.webp',
+      imageAlt: 'MrMath',
+      features: [
+        'Laravel',
+        'Livewire',
+        'Bootstrap 5',
+        'Bilingual AR/EN',
+        'Admin Dashboard',
+        'Courses & Quizzes',
+        'Video Learning',
+        'Fully Responsive',
+      ],
+      previewUrl: 'https://mrmathematica.com',
+    },
+    {
       title: 'Arabic U 2024',
       imageUrl: 'imgs/projects-thumbs/arabicu-intro.webp',
       imageAlt: 'Arabic U',
