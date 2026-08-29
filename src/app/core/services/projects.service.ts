@@ -5,6 +5,39 @@ import { Project } from '../models/project.model';
 export class ProjectsService {
   private readonly projects: Project[] = [
     {
+      title: 'MrMath Educational Platform',
+      imageUrl: 'imgs/projects-thumbs/mrmath-front.webp',
+      imageAlt: 'MrMath',
+      features: [
+        'Laravel',
+        'Livewire',
+        'Bootstrap 5',
+        'Bilingual AR/EN',
+        'Admin Dashboard',
+        'Courses & Quizzes',
+        'Video Learning',
+        'Fully Responsive',
+      ],
+      previewUrl: 'https://mrmathematica.com',
+      slug: 'mrmath',
+    },
+    {
+      title: 'Arabic U 2024',
+      imageUrl: 'imgs/projects-thumbs/arabicu-intro.webp',
+      imageAlt: 'Arabic U',
+      features: [
+        'Laravel',
+        'Bootstrap 5',
+        'Bilingual AR/EN',
+        'Online Quizzes',
+        'Admin Dashboard',
+        'Student Results',
+        'Fully Responsive',
+      ],
+      previewUrl: 'https://arabicu.net',
+      slug: 'arabicu',
+    },
+    {
       title: 'DANIELS Template 2023',
       imageUrl: 'imgs/projects-thumbs/daniels template.webp',
       imageAlt: 'DANIELS Template',
@@ -64,5 +97,9 @@ export class ProjectsService {
 
   getProjects(): Project[] {
     return this.projects;
+  }
+
+  getBySlug(slug: string): Project | undefined {
+    return this.projects.find((p) => p.slug === slug);
   }
 }

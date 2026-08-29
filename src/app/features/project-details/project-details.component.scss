@@ -1,0 +1,141 @@
+.project-details {
+  max-width: 860px;
+}
+
+.back-link {
+  color: #005bb5;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    color: #003d7a;
+    text-decoration: underline;
+  }
+}
+
+.details-header {
+  background: #fff;
+  box-shadow: 1px 1px 3px 0 #ccc;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+
+.details-thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+
+  li {
+    background: #e8f1fa;
+    color: #005bb5;
+    padding: 0.35rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.action-btn,
+.btn-home {
+  display: inline-block;
+  color: #fff;
+  background: #005bb5;
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: background 0.2s ease;
+
+  &:hover {
+    color: #fff;
+    background: #003d7a;
+  }
+}
+
+.readme {
+  background: #fff;
+  box-shadow: 1px 1px 3px 0 #ccc;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+
+.error {
+  color: #a94442;
+}
+
+.readme-body {
+  line-height: 1.65;
+  color: #333;
+
+  :first-child {
+    margin-top: 0;
+  }
+
+  scroll-margin-top: 1rem;
+
+  h1,
+  h2,
+  h3 {
+    color: #005bb5;
+    margin-top: 1.5rem;
+  }
+
+  a {
+    color: #005bb5;
+  }
+
+  code {
+    background: #f0f0f0;
+    padding: 0.15rem 0.35rem;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+
+  pre {
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+
+    code {
+      background: transparent;
+      padding: 0;
+      color: inherit;
+    }
+  }
+
+  ul,
+  ol {
+    padding-left: 1.25rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.not-found {
+  background: #fff;
+  box-shadow: 1px 1px 3px 0 #ccc;
+  border-radius: 5px;
+  padding: 2rem;
+  text-align: center;
+}

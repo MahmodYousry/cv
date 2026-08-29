@@ -1,4 +1,4 @@
-<app-section-title title="Recent Front End Work" />
+<app-section-title title="Recent Work" />
 <div class="container">
   <div class="work my-4">
     <div class="row g-4">
@@ -25,7 +25,12 @@
                 <p>{{ project.description }}</p>
               }
             </div>
-            <a [href]="project.previewUrl" target="_blank" rel="noopener noreferrer">preview</a>
+            <div class="project-actions">
+              <a [href]="project.previewUrl" target="_blank" rel="noopener noreferrer">preview</a>
+              @if (project.slug) {
+                <a [routerLink]="['/projects', project.slug]">details</a>
+              }
+            </div>
           </div>
         </div>
       }
