@@ -19,6 +19,7 @@ export class ProjectsService {
         'Fully Responsive',
       ],
       previewUrl: 'https://mrmathematica.com',
+      slug: 'mrmath',
     },
     {
       title: 'Arabic U 2024',
@@ -34,6 +35,7 @@ export class ProjectsService {
         'Fully Responsive',
       ],
       previewUrl: 'https://arabicu.net',
+      slug: 'arabicu',
     },
     {
       title: 'DANIELS Template 2023',
@@ -95,5 +97,9 @@ export class ProjectsService {
 
   getProjects(): Project[] {
     return this.projects;
+  }
+
+  getBySlug(slug: string): Project | undefined {
+    return this.projects.find((p) => p.slug === slug);
   }
 }
